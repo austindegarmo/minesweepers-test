@@ -8,22 +8,38 @@ let userInput = userInput.toLowerCase();
 
 const getUserChoice() => (userInput) {
 
-	if (userInput = rock,paper,scissors) {
+	if (userInput === 'p' || userInput === 'r' || userInput === 's') {
 
-		return userInput
+		return userInput;
+		} else {
 
-		else throw error 
+			console.log("Fucking error Bruh")
+			}
+
+
+ function getComputerChoice() {
+
+	var comChoice = Math.floor(Math.random() * 3);
+
+	switch (comChoice) {
+		case 0:
+		return 'r';
+		case 1: 
+		return 'p';
+		case 2:
+		return 's';
 	}
-
 }
-const getComputerChoice() => {
 
-	choice = Math.random() * 2;
+function determineWinner() {
 
-	pcchoice = choice.Math.floor();
+	if (comChoice === userInput) {
 
-	if (pcchoice =  1) {
-			pcchoice  = 
+		console.log("game was a tie boi");
 	}
+
+	if (userInput === 'r') {}
+
+
 }
 
