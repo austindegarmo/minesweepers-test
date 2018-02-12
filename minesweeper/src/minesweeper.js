@@ -17,3 +17,4 @@ console.log(board[0][1] = '1');
 console.log(board[2][2] = 'B');
 printBoard(board);
 
+//Rage against the machine
