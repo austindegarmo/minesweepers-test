@@ -38,7 +38,10 @@ function determineWinner() {
 		console.log("game was a tie boi");
 	}
 
-	if (userInput === 'r') {}
+	if (userInput === 'r') {
+
+		console.log("Youuouou Lost.")
+	}
 
 
 }
