@@ -12,7 +12,8 @@ const board = [
   [' ', ' ', ' '], 
   [' ', ' ', ' '] 
 ];
-// console.log(board)
 
+console.log(board[0][1] = '1');
+console.log(board[2][2] = 'B');
 printBoard(board);
 
