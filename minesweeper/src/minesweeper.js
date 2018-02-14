@@ -1,20 +1,14 @@
-const printBoard = board => {
+const generatePlayerBoard = function(numberOfRows,numberOfColumns) {
 
-	console.log('Current Board:');
-	console.log(board[0].join(' | '));
-	console.log(board[1].join(' | '));
-	console.log(board[2].join(' | '));
+[
+  [' ', ' ', ' '],
+  [' ', ' ', ' '],
+  [' ', ' ', ' ']
+]
 
 };
 
-const board = [
-  [' ', ' ', ' '],
-  [' ', ' ', ' '], 
-  [' ', ' ', ' '] 
-];
-
-console.log(board[0][1] = '1');
-console.log(board[2][2] = 'B');
+generatePlayerBoard();
 printBoard(board);
 
 //Rage against the machine
