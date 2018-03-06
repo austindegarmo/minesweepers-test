@@ -6,15 +6,18 @@ const scissors = "s";
 
 let userInput = userInput.toLowerCase();
 
-const getUserChoice() => (userInput) {
 
-	if (userInput === 'p' || userInput === 'r' || userInput === 's') {
+var getUserChoice() => (userChoiceBoi) {
 
-		return userInput;
+
+	if (userChoiceBoi === 'p' || userChoiceBoi === 'r' || userChoiceBoi === 's') {
+
+		return userChoiceBoi;
 		} else {
 
 			console.log("Fucking error Bruh")
 			}
+}			
 
 
  function getComputerChoice() {
@@ -45,4 +48,10 @@ function determineWinner() {
 
 
 }
+getUserChoice();
+getComputerChoice();
+determineWinner();
+
+console.log(getComputerChoice);
+console.log(getUserChoice);
 
