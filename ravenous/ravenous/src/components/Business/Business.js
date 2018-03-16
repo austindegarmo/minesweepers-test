@@ -1,4 +1,5 @@
 import React from 'react';
+import business/.business.css
 var business {
   imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
  name: 'MarginOtto Pizzeria',
@@ -21,7 +22,7 @@ class business extends React.Component {
   <div className="Business-information">
     <div className="Business-address">
       <p>1010 Paddington Way</p>
-      <p>Bordertown</p>
+      <p>Flavortown</p>
       <p>NY 10101</p>
     </div>
     <div className="Business-reviews">
@@ -34,3 +35,4 @@ class business extends React.Component {
 
   }
 }
+React.DOM(<Business />, doucment.getElementById('app'));
