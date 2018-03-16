@@ -18,4 +18,4 @@ export BusinessList extends React.Component {
 
 
 export default BusinessList;
-ReactDOM.render(<BusinessList />, document.getElementById('app'));
+//ReactDOM.render(<BusinessList />, document.getElementById('app'));
