@@ -9,10 +9,20 @@ class sortByOptions extends React.Component {
 
 class SearchBar extends React.Component {
 
-  renderSortByOptions(
+  renderSortByOptions() {
+    return objects.keys(sortByOptions)
+    if (i = 0; i < keys.length; i++;)
+ { console.log('Working Mechanism');
+
+
+ }  }
+
+
     if ( i = 0; i <= SearchBar.length; i++) {
       return 'Success!!!'
+      else
+      return 'Error'
     }
-  )
+
 
 }
