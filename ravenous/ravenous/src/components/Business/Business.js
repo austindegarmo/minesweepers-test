@@ -37,4 +37,4 @@ class business extends React.Component {
   }
 }
 export default Business;
-//React.DOM(<Business />, doucment.getElementById('app'));
+//ReactDOM.render(<Business />, document.getElementById('app'));
