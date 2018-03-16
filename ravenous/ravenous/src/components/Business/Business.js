@@ -1,6 +1,7 @@
 import React from 'react';
-import business/.business.css
-var business {
+import './business.css'
+export default Business;
+export var business {
   imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
  name: 'MarginOtto Pizzeria',
  address: '1010 Paddington Way',
@@ -35,4 +36,5 @@ class business extends React.Component {
 
   }
 }
-React.DOM(<Business />, doucment.getElementById('app'));
+export default Business;
+//React.DOM(<Business />, doucment.getElementById('app'));
