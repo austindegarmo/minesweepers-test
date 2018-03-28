@@ -1,8 +1,8 @@
 const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
-  let board = [];
-  for (let i = 0; i < numberOfRows.length; i++) {
+  const board = [];
+  for (let rowIndex = 0; rowIndex < numberOfRows; rowIndex++) {
     const row = [];
-    for (let i = 0; i < numberOfColumns.length; i++) {
+    for (let i = 0; i < numberOfColumns; i++) {
       row.push(' ');
     }
     board.push(row);
@@ -10,11 +10,11 @@ const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
   return board;
 };
 
-const generateBombBoard = (numberOfRows, numberofColumns, numberOfBombs) => {
-  let board = [];
-  for (let i = 0; i < numberOfRows.length; i++) {
+const generateBombBoard = (numberOfRows, numberOfColumns, numberOfBombs) => {
+  const board = [];
+  for (let i = 0; i < numberOfRows; i++) {
     const row = [];
-    for (let i = 0; i < numberOfColumns.length; i++) {
+    for (let i = 0; i < numberOfColumns; i++) {
       row.push(null);
     }
     board.push(row);
@@ -22,26 +22,25 @@ const generateBombBoard = (numberOfRows, numberofColumns, numberOfBombs) => {
 
 
   let numberOfBombsPlaced = 0;
+
   while (numberOfBombsPlaced < numberOfBombs) {
     const randomRowIndex = Math.floor(Math.random() * numberOfRows);
     const randowColumnIndex = Math.floor(Math.random() * numberOfColumns);
-    board [randomRowIndex][randowColumnIndex] = 'B';
+    board[randomRowIndex][randowColumnIndex] = 'B';
     numberOfBombsPlaced++;
   }
+
   return board;
-}
+};
 
 const printBoard = board => {
-  board.map(row => row.join(' | '));
+  console.log(board.map(row => row.join(' | ')).join('\n'));
 
-}
-// const printBoard = (board) => {
-//   console.log('Current Board: ');
-//   // console.log(board[0].join(' | '));
-//   // console.log(board[1].join(' | '));
-//   // console.log(board[2].join(' | '));
-// };
+};
 
-
-
-// printBoard(board);
+let playerBoard = generatePlayerBoard(3,4);
+let bombBoard = generateBombBoard(3,4,5);
+console.log('Player Board: ');
+printBoard(playerBoard);
+console.log('Bomb Board: ');
+printBoard(bombBoard);
