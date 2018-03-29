@@ -47,14 +47,19 @@ const getNumberOfNeighborBombs = (bombBoard, rowIndex, columnIndex) => {
     const neighborColumnIndex = columnIndex + offset[1];
     if (neighborRowIndex >= 0 && neighborRowIndex < numberOfRows && neighborColumnIndex >= 0 && neighborColumnIndex < numberOfColumns) {
       if(bombBoard[neighborRowIndex]['B'] == false) {
-        
+        numberOfBombs++;
+      }else if ('B' == bombBoard);
+    }
+  });
+    return numberOfBombs;
+    const flipTile = (playerBoard, bombBoard, rowIndex, columnIndex) => {
+      if(playerBoard == ' ') {
+        console.log(' This tile has already been flipped!');
+        return
+
       }
 
     }
-  });
-
-
-
 }
 
 const printBoard = board => {
