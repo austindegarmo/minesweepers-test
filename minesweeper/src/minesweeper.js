@@ -42,7 +42,8 @@ const getNumberOfNeighborBombs = (bombBoard, rowIndex, columnIndex) => {
   const numberOfRows = bombBoard.length;
   const numberOfColumns = [bombBoard[0].length;
   let numberOfBombs = 0;
-  bombBoard.forEach(neighborOffsets)
+  neighborOffsets.forEach([0]);
+  
 
 
 }
