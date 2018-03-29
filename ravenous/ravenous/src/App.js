@@ -24,7 +24,7 @@ class business extends React.Component {
 </div>
 
   }
-  const businesses = [
+  const Businesses = [
     business,
     business,
     business,
