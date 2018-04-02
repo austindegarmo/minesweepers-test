@@ -1,29 +1,38 @@
 import React from 'react';
 import './SearchBar.css';
 
-class sortByOptions extends React.Component {
+const sortByOptions = {
   'Best Match': 'best_match',
   'Highest Rated': 'rating',
   'Most Reviewed': 'review_count'
-}
+};
 
 class SearchBar extends React.Component {
-
   renderSortByOptions() {
-    return objects.keys(sortByOptions)
-    if (i = 0; i < keys.length; i++;)
- { console.log('Working Mechanism');
+    return Object.keys(sortByOptions).map(sortByOption => {
+      let sortByOptionValue = sortByOptions[sortByOption];
+      return <li key={sortByOptionValue}>{sortByOption}</li>;
+    });
+  }
 
-
- }  }
-
-
-    if ( i = 0; i <= SearchBar.length; i++) {
-      return 'Success!!!'
-      else
-      return 'Error'
-    }
-
-
+  render() {
+    return (
+      <div className="SearchBar">
+        <div className="SearchBar-sort-options">
+          <ul>
+            {this.renderSortByOptions()}
+          </ul>
+        </div>
+        <div className="SearchBar-fields">
+          <input placeholder="Search Businesses" />
+          <input placeholder="Where?" />
+        </div>
+        <div className="SearchBar-submit">
+          <a>Let's Go</a>
+        </div>
+      </div>
+    );
+  }
 }
-//extra sad code
+
+export default SearchBar;

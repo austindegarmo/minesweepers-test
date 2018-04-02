@@ -24,7 +24,7 @@ class business extends React.Component {
 </div>
 
   }
-  const Businesses = [
+  const businesses = [
     business,
     business,
     business,
@@ -32,6 +32,22 @@ class business extends React.Component {
     business,
     business
   ]
+
+export BusinessList extends React.Component {
+  render() {
+    return (
+      
+    <div propsName={BusinessList}>
+      <Business />
+      <Business />
+      <Business />
+      <Business />
+      <Business />
+      <Business />
+    </div>)
+  }
+}
+
 
 class App extends Component {
   render() {
