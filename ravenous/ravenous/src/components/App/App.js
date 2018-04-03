@@ -34,6 +34,8 @@ class business extends React.Component {
   ]
 const searchYelp(term, location, sortBy) {
 
+  console.log({searchYelp} with {term} {location} {sortBy})
+
 }
 export BusinessList extends React.Component {
   render() {
