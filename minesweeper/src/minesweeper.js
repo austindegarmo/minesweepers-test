@@ -73,3 +73,5 @@ console.log('Player Board: ');
 printBoard(playerBoard);
 console.log('Bomb Board: ');
 printBoard(bombBoard);
+
+console.log("Look at console for logged fun.")
