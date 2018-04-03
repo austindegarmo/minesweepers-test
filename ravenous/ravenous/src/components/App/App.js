@@ -32,7 +32,9 @@ class business extends React.Component {
     business,
     business
   ]
+const searchYelp(term, location, sortBy) {
 
+}
 export BusinessList extends React.Component {
   render() {
     return (
